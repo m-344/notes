@@ -1,0 +1,158 @@
+
+  <xsl:sort select="translate(@ident, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+          'abcdefghijklmnopqrstuvwxyz')"/>
+
+
+
+${xpath_eval(
+doc('${currentFileURL}')//Q{http://www.mozarteum.at/ns/dme}div[@id = 'mergeStaves']//@file
+)}
+
+${xpath_eval(
+resolve-uri(
+doc('${currentFileURL}')//Q{http://www.mozarteum.at/ns/dme}div[@id = 'mergeStaves']//@file, ${currentFileURL})
+)}
+
+${xpath_eval( resolve-uri( doc('${currentFileURL}')//Q{http://www.mozarteum.at/ns/dme}div[@id = 'mergeStaves']//@file, ${currentFileURL}) ) }
+
+for diff_auto-edt_merge: add option vor chord/artic 458-004, m132, 314
+
+ 
+
+Shortcuts: FreeComander, path: Alt+Insert, 
+open cdm in the current folder: Ctrl+D
+
+
+
+
+
+<xsl:message>Matched: <xsl:value-of select="$elemente-ref/@xml:id"/></xsl:message>
+
+
+
+
+let $vs := '  A cat  found a mouse and   the cat had a good   lunch' return
+string-length(normalize-space($vs))
+-
+string-length(translate(normalize-space($vs), ' ', ''))
++ 1
+
+
+
+
+<xsl:output omit-xml-declaration="yes" indent="yes"/> 
+
+xPath:
+every $i in tokenize(//@source[parent::lem[@xml:id='lem_10656']],'\s') satisfies $i = "#source_2"
+
+<!--and not(name(..) = 'reg')-->
+
+If the elements are referenced
+//@*  [ substring-after(.,'#') = //(tie | slur | accid | artic)/@xml:id]
+
+RegEx
+//dir[parent::measure[//dir[not(parent::supplied) and (matches(./text(), '^[0-9]$') ])]]]
+//dir[parent::measure[]]
+matches(./text(), '[a-zA-z]')
+
+codepoints-to-string(reverse(string-to-codepoints('abc')))
+
+WRITE CSV
+  <xsl:param name="delim" select="','"/>
+  <xsl:param name="break" select="'&#xA;'"/>
+
+  <xd:doc>
+    <xd:desc/>
+  </xd:doc>
+  <xsl:template match="/">
+    <xsl:apply-templates
+      select="//mei:measure[@xml:id = 'm2_k458_002_02-B1']//mei:staff[@n = '2' or @n = '3']//mei:note"/>
+  </xsl:template>
+
+  <xd:doc>
+    <xd:desc/>
+  </xd:doc>
+  <xsl:template match="//mei:measure[@xml:id = 'm2_k458_002_02-B1']//mei:staff[@n = '2' or @n = '3']//mei:note">
+    <xsl:for-each select=".">
+      <xsl:value-of select="substring-before(@xml:id, '-')"/>
+      <xsl:value-of select="$delim"/>
+      <xsl:value-of select="$delim"/>
+      <xsl:value-of select="@xml:id"/>
+      <xsl:value-of select="$break"/>
+    </xsl:for-each>
+  </xsl:template>
+
+  <xsl:output indent="yes" encoding="UTF-8" method="text"/>
+
+
+
+XSLT:
+
+select="1 to 10"
+
+
+
+
+How give the parameter value to another template (excerpt from fixtstamps.xsl)
+
+  <xsl:template match="/">
+        <xsl:apply-templates select="node()" mode="add.tstamps"/>
+    </xsl:template>
+    
+    <xsl:template match="mei:measure" mode="add.tstamps">
+        <xsl:variable name="meter.count" select="(preceding::mei:scoreDef[@meter.count])[1]/@meter.count cast as xs:integer" as="xs:integer"/>
+        <xsl:variable name="meter.unit" select="(preceding::mei:scoreDef[@meter.unit])[1]/@meter.unit cast as xs:integer" as="xs:integer"/>
+        
+        <xsl:copy>
+            <!--<xsl:attribute name="meter.count" select="$meter.count"/>-->
+            <!--<xsl:attribute name="meter.unit" select="$meter.unit"/>-->
+            <xsl:apply-templates select="node() | @*" mode="#current">
+                <xsl:with-param name="meter.count" select="$meter.count" tunnel="yes"/>
+                <xsl:with-param name="meter.unit" select="$meter.unit" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="mei:layer" mode="add.tstamps">
+        <xsl:param name="meter.count" tunnel="yes"/>
+        <xsl:param name="meter.unit" tunnel="yes"/>
+        
+        <xsl:variable name="events" select=".//mei:*[(@dur and not((ancestor::mei:*[@dur] or ancestor::mei:bTrem or ancestor::mei:fTrem)) and not(@grace)) or (local-name() = ('bTrem','fTrem','beatRpt','halfmRpt'))]"/>
+        <xsl:variable name="durations" as="xs:double*">
+            
+            <xsl:for-each select="$events">
+                <xsl:variable name="dur" as="xs:double">
+                    <xsl:choose>
+                        <xsl:when test="@dur">
+                            <xsl:value-of select="1 div number(@dur)"/>
+                        </xsl:when>
+                        <xsl:when test="local-name() = 'bTrem'">
+                            <xsl:value-of select="1 div (child::mei:*)[1]/number(@dur)"/>
+                        </xsl:when>
+                        <xsl:when test="local-name() = 'fTrem'">
+                            <xsl:value-of select="1 div ((child::mei:*)[1]/number(@dur) * 2)"/>
+                        </xsl:when>
+                        <xsl:when test="local-name() = 'beatRpt'">
+                            <xsl:value-of select="1 div $meter.unit"/>
+                        </xsl:when>
+                        <xsl:when test="local-name() = 'halfmRpt'">
+                            <xsl:value-of select="($meter.count div 2) div $meter.unit"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+
+SEPARATORS
+white space:	&#x20;
+
+
+
+
+
+    <xsl:variable name="p"  select="doc('file:/C:/Users/sapov/Documents/dme_repos_/trunk/playground/Musterheader/Arbeitskopie_header_387-002_4996.xml')//mei:editorialDecl/mei:p[2]"  as="element()"/>
+    
+
+    <xsl:template match="mei:editorialDecl/mei:p[2]">
+        <xsl:copy-of  select="$p" exclude-result-prefixes="#all"/>
+    </xsl:template>
+
+

@@ -1,0 +1,190 @@
+[30.08.2019]
+KV 356, 439
+
+[25.07.2019]
+- partly supplied slurs
+
+
+
+
+[22.07.2019]
+- @n Werte wie 8a schlecht, da es string ist. Probleme beim prozessieren, z. b. "4 to 18"
+
+
+
+check if notes referenced by @startid, @endid are congruent with the staff
+
+[17.06.2018]
+ - beams
+ - 543-004: m128 zweiten Bogen ergänzen? Dynamik?
+ - Dynamik, die sich auf zwei layer bezieht. bsp: 543-003, m61, @startid ist unlogisch, besser @tstamps
+ - DIME-tools: 
+ 		addBeam noch im sandbox
+ 		wrapper >> convertAttr2Element_accid-artic,
+ 		mergeStaves: DIME GUI
+ 		
+	 
+ 
+  - meiHead
+
+a 2 @sameas ? vgl Vorwort S X (543)
+
+
+[02.05.2019]
+
+- usecases:
+	- workflow: diff folder, proposals, notAuto
+	- note
+	- slur, split slur (three readings)
+	- dmeedtB1_458-001
+	- dmeedtB1_458-002
+	- dmeedtB1_458-003
+	- dmeedtB1_458-004
+
+
+
+[25.03.2019]
+
+
+
+[17.03.2018]
+- mei/@xml:id delete?
+- synchrone schematron-dme and schematron-mei
+- einheitliche Farben f RefTexts Korrekturen
+
+
+
+[11.03.2018]
+- verlorene supplied im DOX nachschauen z.B. 138-003, m74, dynam: f
+
+Anmelden MECy
+
+[04.03.2018]
+- KVonline auf K: Einheitstitel schauen
+sueddt. bibl verbund gnd
+- gnd vom divertimento nehmen 
+175692 Code fuer sozialbuero
+Tel Feldbacher 01
+Leitzahl fuer die Polizei 131
+
+
+[04.02.2018]
+Referenztext 137-001
+
+
+Besprechung 
+[28.01.2018]
+
+Besprechung 
+[21.01.2018]
+@evidence  mit @type ?
+Gerhard Widmer {Linz}
+
+
+ToDO Schematron  
+altTexts_music
+[21.01.2018]
+
+//corr[(slur| rest)]/@evidence
+ - analogy
+ - misprint
+ - internal
+//corr[note]/@evidence
+ - analogy
+ - misprint
+ - internal
+ - harmonic_context
+//corr[dynam]/@evidence
+ - analogy
+ - misprint
+ - internal
+ - position
+//corr[accid]/@evidence
+ - analogy
+ - misprint
+ - internal
+ - harmonic_context
+//corr[rest]/@evidence
+ - analogy
+ - misprint
+ - internal
+
+25.01.2019
+ToDo: fix conflicts with embedded schematron rules
+
+
+
+if . = "internal' then not(@source) ??
+
+[Januar 2019]
+SVN-change
+    `http://192.168.0.50/usvn/svn/LM-Violinschule/trunk` in 
+    `https://usvn.mozarteum.at/usvn/svn/LM-Violinschule/trunk`
+
+[17.01.2019]
+Implemented
+//unclear[(slur | tie)]/@reason:
+ - ambiguous_start
+ - ambiguous_ending
+ - split
+ - system_break
+ - ambiguous_start ambiguous_ending
+ - illegible
+ 
+ //unclear[note]/@reason:
+ - pitch
+ - duration
+ - illegible
+ 
+ //unclear[artic]/@reason
+ - ambiguous_shape
+ - illegible
+
+ //unclear[dynam]/@reason
+ - ambiguous_position
+ - illegible
+
+
+
+
+
+10 Dec 2018
+- MEC
+- diff
+- DC
+- Termin press-Konferenz
+10:30 Tanzmeistersaal,
+
+
+	
+3 Dec 2018	
+
+
+
+FK: gVIM bei mir installieren bzw. an -B1 anpassen
+
+
+
+19 Nov 2018
+use scenarios
+dmeedtA_458-001:
+wrap: reg @xml:id @resp="#DME-editors" @type="alt_representation"/dynam
+
+
+12 Nov 2018
+
+changes
+relation
+dox-converting accidentals
+
+sb/pb nach einem layer oder nach dem Element @n='valueOfVoice, e.g. '1' for Violine
+
+  check DOX-converting: if tuplet/rest -> bracket visiblel
+
+
+
+
+
+
+
+
