@@ -1,4 +1,15 @@
 [JOB LOG]
+[August 2019]
+
+DOXconvX:
+
+These changes are applied with no dependency if Werk-Headr is used or not
+staffDef
+ - creates two layerDefs if there are more than one vlaues in the @dme.parts
+ - adds @label.abbr, @decls (the parent node depends on if there layerDefs), <label/>
+ - adds @trans.semi, @trans.diat for transposing instruments
+ - deletes @key.sig of the non-transposing instruments
+
 [Juli 2019]
 Erstbearbeitung: 581-003
 Korrekturlesen: 581-001, -002,-004
