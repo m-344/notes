@@ -1,14 +1,35 @@
 [JOB LOG]
 [August 2019]
 
-DOXconvX:
+functions_all.xsl
+functx:substring-before-match
 
-These changes are applied with no dependency if Werk-Headr is used or not
-staffDef
- - creates two layerDefs if there are more than one vlaues in the @dme.parts
- - adds @label.abbr, @decls (the parent node depends on if there layerDefs), <label/>
- - adds @trans.semi, @trans.diat for transposing instruments
- - deletes @key.sig of the non-transposing instruments
+
+lists.xml added instruments
+
+DOXconvX, v2.2.4:
+
+These changes are applied with no dependency if Werk-Header is used or not
+
+<perfRes> from the original file is transformed:
+	Adds:
+			- new IDs, acoording to the number and type, e.g. 'instrVoice_1', 'vocalVoice_1'
+			- @label and text: e.g. 'flute-1'
+
+Note: before applying set the @codedval in the correct order and names (text) for vocalVoice (e.g. Villanela) if available.
+
+<staffDef/>
+	Adds:
+			- <layerDef>s (if there are more than one vlaues in the @dme.parts)
+			- @label.abbr, @decls (the parent node depends on that if there are <layerDef>s or not), <label>
+			- @trans.semi, @trans.diat, @key.sig for transposing instruments
+	Deletes:
+			- @key.sig (non-transposing instruments)
+
+
+ 
+ 
+
 
 [Juli 2019]
 Erstbearbeitung: 581-003
