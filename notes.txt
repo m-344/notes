@@ -1,5 +1,21 @@
 [JOB LOG]
 [August 2019]
+
+DME-Besprechung 22.08.2019
+Infolog / Tickets Regeln:
+Bottom vs up posting
+ - Beim Tippen bewegt sich die seite
+ - Beim längeren Warten = lesen, springt der Infolog nach oben
+
+Da DC gerade ein Thema ist, hier einige Gedanken zur möglichen Verbesserung.
+Mir ist aufgefallen, dass im DC-Datensatz die DIME nicht vorkommt. Der denkbare Ort wäre <dc:relation> mit der gleichen 'is part of'-Beziehung, wie das, was gegenwärtig schon da ist, i.d.R. der Titel des gesamtes Werk, wenn der File ein einzelner Satz aus einem mehrsätzigen Werk ist. Da in DC die Zeilen 'wiederholbar' sind, d.h. mehrmals vorkommen können, bräuchte man den bestehenden <dc:relation> nicht ändern, sondern einfach einen zweiten dazuschreiben. Dieser könnte entweder aus /mei/meiHead[1]/fileDesc[1]/seriesStmt[1]/title[1] ausgelesen oder einfach als feste Zeile generiert werden.
+
+Für die erste Zeile, <dc:description>, die derzeit aus /mei/meiHead[1]/fileDesc[1]/titleStmt[1]/title[4] generiert wird, könnte ich mir - nach Konsultation diverser DC Guides - vorstellen, dass hier der erste Satz aus der Editor's Note (ohne die Formatierung) eigentlich der passende Inhalt ist.
+Das einsame @analog="dc:description", das sich in unseren Files bei /mei/meiHead[1]/fileDesc[1]/titleStmt[1]/title[4] befindet, sollte man jedenfalls löschen. 
+
+ - schematron hairpin/@tstamp2
+
+
 Erstbearbeitung: 439-000
 [439-001]
 	- <identifier authority="KVonline" label="KVonline" type="movement" xml:id="kv618000">618/000</identifier>
