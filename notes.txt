@@ -1,11 +1,18 @@
 [JOB LOG]
 [August 2019]
+DME-besprechung 26.08.2019
+ - Tickets nur fuer die aufgaben
+ - mdiv_01 anstatt _a
+ - perfRes/@authority delete
+ - 356 proofreading
+ - schematron scoreDef 'cut' nur bei 2/2
+ - corr tstamps 138/01, 387/04, 618 update @tstamp2
+ - anschauen endabnahme log (K... Edition/Protokoll_Endabnahme
+_______________________________
+ done prepare_edition.xsl (meiHead)
 
 DME-Besprechung 22.08.2019
-Infolog / Tickets Regeln:
-Bottom vs up posting
- - Beim Tippen bewegt sich die seite
- - Beim längeren Warten = lesen, springt der Infolog nach oben
+
 
 Da DC gerade ein Thema ist, hier einige Gedanken zur möglichen Verbesserung.
 Mir ist aufgefallen, dass im DC-Datensatz die DIME nicht vorkommt. Der denkbare Ort wäre <dc:relation> mit der gleichen 'is part of'-Beziehung, wie das, was gegenwärtig schon da ist, i.d.R. der Titel des gesamtes Werk, wenn der File ein einzelner Satz aus einem mehrsätzigen Werk ist. Da in DC die Zeilen 'wiederholbar' sind, d.h. mehrmals vorkommen können, bräuchte man den bestehenden <dc:relation> nicht ändern, sondern einfach einen zweiten dazuschreiben. Dieser könnte entweder aus /mei/meiHead[1]/fileDesc[1]/seriesStmt[1]/title[1] ausgelesen oder einfach als feste Zeile generiert werden.
