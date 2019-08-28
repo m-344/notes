@@ -1,5 +1,9 @@
 [JOB LOG]
 [August 2019]
+Abgesehen davon, dass Metrumangaben 4/4 waren, dadurch auch falsche @tstamps, kommt noch einiges dazu, dass manche
+note und space gar keine @tstamps aus DOX-Konvertierung bekommen haben. Dabei sind die Noten, die in einem chord sind, d.h. nur der chord bekommt @tstamp, was ich glaube Ok ist, aber es sind auch welche, die alleinstehend sind. Bsp.
+//note[@doxml.id='d28e349']
+zwei spaces vor der //note[@doxml.id='d28e206']
 
 
 
