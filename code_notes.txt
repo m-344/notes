@@ -20,7 +20,12 @@ ___________
 
 
 
-
+<!DOCTYPE product [
+  <!ELEMENT product (name, manufactuer)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT manufactuer (#PCDATA)>
+  <!ENTITY CompanyName "Liquid Technologies">
+]>
 
   <xsl:sort select="translate(@ident, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
           'abcdefghijklmnopqrstuvwxyz')"/>
