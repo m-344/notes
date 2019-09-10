@@ -1,6 +1,13 @@
-[JOB LOG]
+[LOG]
+DME-besprechung 09.09.2019
+Schematron: @sameas verweist auf den gleichen @tstamp
+Ich aktualisierte MEICO-Oxygen-Verknüpfung an die letzte Version, die von Axel versandt wurde. Auch habe ich den Ordner "K:\PROJEKTE\DMEDME\Peripherie\MEICO" unter Versionskontrolle gestellt. Die SVN-repo befindet sich im "K:\PROJEKTE\DMEDME\Peripherie\MEICO" ich habe den Ordner aber als "hidden" gestellt.
+
+
 [August 2019]
 
+ide-mei atom
+mei-tools atom
 
 
 Updates Oxygen
