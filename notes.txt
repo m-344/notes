@@ -1,4 +1,5 @@
 [LOG]
+[September 2019]
 Monatsgespräch 10.09.2019
 Erstbearbeitung: 581-003 
 Korrekturlesen: 581-001, -002,-004
@@ -24,7 +25,6 @@ DME-besprechung 26.08.2019
  - Tickets nur fuer die aufgaben
  - mdiv_01 anstatt _a
  - perfRes/@authority delete
- - 356 proofreading
  - schematron scoreDef 'cut' nur bei 2/2
  - corr tstamps 138/01, 387/04, 618 update @tstamp2
  - anschauen endabnahme log (K... Edition/Protokoll_Endabnahme
