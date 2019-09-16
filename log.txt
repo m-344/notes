@@ -1,5 +1,10 @@
 [LOG]
 [September 2019]
+DOXconvX#meiHead:
+ - add placeholders: workID, tempoHeading, workTitleDE, workTitleEN
+ - replace tempoFirstMeasure with tempoHeading 
+
+
 Monatsgespräch 10.09.2019
 Erstbearbeitung: 581-003 
 Korrekturlesen: 581-001, -002,-004
