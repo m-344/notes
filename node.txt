@@ -6,7 +6,8 @@ npm install				[if you delete the folder "node modules" you can bring it back by
 
 npm install gulp-cli --global		[install gulp globally]
 npm install gulp --save-dev		[install gulp locally]
-	    gulp-watch --save-dev	[install the package gulp-watch]
+	 				  gulp-watch --save-dev	[install the package gulp-watch]
+						browser-sync --save-dev
 
 gulp watch 				[start watching tasks]
 Ctrl+C					[stop watching tasks]

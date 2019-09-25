@@ -1,8 +1,32 @@
 [LOG]
 [September 2019]
-DOXconvX#meiHead:
- - add placeholders: workID, tempoHeading, workTitleDE, workTitleEN
- - replace tempoFirstMeasure with tempoHeading 
+
+XSLT: dir_tstamp
+
+550-01:
+ - Violino I, II: zwei layers ??
+ - m43 multiRest?? supplied @num
+ - Bratschen: chord oder 2 layers mit @stem.sameas, was ist mit Bogen?
+
+Erstbearbeitung: 550-001
+
+Header Fragen:
+
+ - <annot label="version 1" n="2"/> verschwunden bei transformation
+
+				
+ 
+
+		
+
+DOXconvX  v2.2.5 (17.09.2018)
+ - meiHead:
+ 	add values for the placeholders workID, tempoHeading, workTitleDE, workTitleEN
+ 	replace tempoFirstMeasure with tempoHeading 
+ 	
+ - staffDef: add @trans.seami/@trans.diat for Corno in B hoch and Corno in G 
+ 
+
 
 
 Monatsgespräch 10.09.2019
