@@ -1,3 +1,12 @@
+DOXconvX
+
+ changes for testing purposes
+  - comment out the variables in DOXconvX
+  - changed the file name Werk-header_550_TEST.xml in dme:inputHead
+  
+  
+
+
 require('fs'); file system module of the node
 
 npm init				[initialize npm in the working directory]
