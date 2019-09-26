@@ -1,0 +1,112 @@
+#all commands start with 'git'
+init --bare	[intialize a bare repo, used as remote]
+--version
+staus -s	[-s stand for short]
+diff filename
+	--staged [changes made but not yet commited]
+q 	[quit git diff]
+commit 	-m "message in presence tense"
+	-v [opens in the editor with additional info about the commit]	
+	-a [commit all changes]
+	--amend [change the previous commit]
+push origin master	
+revert [ID of the commit]
+config 		[check configuration for a particular parameter]
+	-l 	[list all configuration parameters]
+	--local core.editor vim	[choose between --local or --global parameters]
+ssh-keygen -t rsa -C "le.chat454@gmail.com" [generates an ssh key]
+next step: copy the key from where it is stored and paste it to github
+commandName --help
+
+
+https://help.github.com/en/articles/configuring-a-remote-for-a-fork
+
+
+
+cat filenName.extension [(read a file on the terminal] [GitBash] OR
+	C:\Users\sapov>type .\.gitconfig [cmd]
+branch branchName	[create a new branch]
+branch 			[check on which branch I'm working on]
+	-d brunchName 	[delete the branch]
+checkout
+	branchName 	[switch to another branch]
+	master -- fileName	[will overwrite with the version of the last commit]
+	-- .		[load all files from the repo, overwrites modified files]
+	-- fileName	[load particular file]
+merge braunchName
+remote
+	-v show		[show remote repositorie]
+	add origin	[set up origin for the first time]
+	set-url origin https://...	[CHANGE the remote]
+
+reset --soft HEAD~{number of commits}	[squashes the commits ~ merges them int ome]
+
+
+
+tag "tagValue"
+	-a [annotated] -m "message"
+show "tagValue"
+
+GItBash [same commands as Linux]
+NAVIGATE FILE SYSTEM
+ll
+cd /l/Programmieren/cmd
+ls [content of the folder]
+pwd [full path of the current folder]
+
+
+CREATE/DELETE
+mkdir folderName
+touch "fileName"	[creates a file not a git command]
+mv fileName folderName/   [move file to a folder]
+mv folder/file . [move file from subdirectory to the current folder '.']
+cp fileName copiedFileName
+	-r "folder/path/to/copy"	"folder/destination/path"
+rm fileName
+	-r folderPath/
+
+
+VI
+Command MODE
+vi newFileName [create new file]
+i [switch to INSERT mode from COMMAND mode]
+x 	[del character]
+dd 	[del line]
+:w write file
+:q quite VI
+:wq write file and quite
+
+
+
+
+
+
+CONTENT
+cat test.txt [see the content]
+
+help help commandName
+
+
+ARCHIVE
+
+
+VIM INSERT MODE
+ESC [switch to COMMAND mode from INSERT mode]
+
+add 
+	* [stage all files] 
+	. [stage the current file]
+	-A [all changes]
+
+TERMINAL
+
+
+NOTES:
+attlssian bitbucket remote rpository services
+
+
+_______
+git config --local user.name "m-344"
+git config --local user.email "le.chat454@gmail.com"
+
+
