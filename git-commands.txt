@@ -25,9 +25,10 @@ https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 
 cat filenName.extension [(read a file on the terminal] [GitBash] OR
 	C:\Users\sapov>type .\.gitconfig [cmd]
-branch branchName	[create a new branch]
 branch 			[check on which branch I'm working on]
-	-d brunchName 	[delete the branch]
+		-a			[show available branches on remote]
+		branchName	[create a new branch]
+		-d brunchName 	[delete the branch]
 checkout
 	branchName 	[switch to another branch]
 	master -- fileName	[will overwrite with the version of the last commit]
