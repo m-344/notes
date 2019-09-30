@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="editions-log">
+	<title>Editionslog</title>
+	<body>
+		<div id="550-001">
+			<p>
+				<b>550-01</b>
+			</p>
+			<p>- Violino I, II: zwei layers ??</p>
+			<p> - m43 multiRest?? supplied @num, "multiRest_25332" </p>
+			<p> - Bratschen: chord oder 2 layers mit @stem.sameas, was ist mit Bogen?</p>
+			<p> - Regel: In diesen control events (&lt;dynam>, &lt;dir>, &lt;fermata>, &lt;trill>, &lt;turn>) muss @layer immer vorhanden sein, entweder als @layer="1 2", wenn das control event auf beide layer bezogen ist, oder als einzelne Layerzuweisung @layer="1" oder @layer="2", wenn das control event auf eines der beiden layers bezogen ist. ?Gilt für alle staves oder nur dort, wo 2 layers gibt? Momentant, falls es 2 layers gibt und im 2en eine Pause ist, dann bekommt dynam layer="1" </p>
+			<p> - xml:id="note_94392" fehlendes @artic, ergaenzen?</p>
+			<p> - trill_115482 double supplied </p>
+			<p> - kodieren slurs, @artic bei den @stem.sameas Noten, doppelt ? (slur_120252, staff_119946)</p>
+		</div>
+	</body>
+</topic>

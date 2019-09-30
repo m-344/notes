@@ -27,6 +27,7 @@ npm install postcss-simple-vars --save-dev
 						autoprefixer 
 						postcss-nested 
 						postcss-import 
+						postcss-mixins	
 						
 'css resets' alternative to normalize.css
 
