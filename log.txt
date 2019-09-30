@@ -1,76 +1,13 @@
 [LOG]
 [September 2019]
 
-XSLT: dir_tstamp
+NEW: dir_tstamp
 
-550-01:
- - Violino I, II: zwei layers ??
- - m43 multiRest?? supplied @num, "multiRest_25332" 
- - Bratschen: chord oder 2 layers mit @stem.sameas, was ist mit Bogen?
- - Regel: In diesen control events (<dynam>, <dir>, <fermata>, <trill>, <turn>) muss @layer immer vorhanden sein, entweder als @layer="1 2", wenn das control event auf beide layer bezogen ist, oder als einzelne Layerzuweisung @layer="1" oder @layer="2", wenn das control event auf eines der beiden layers bezogen ist. ?Gilt für alle staves oder nur dort, wo 2 layers gibt? Momentant, falls es 2 layers gibt und im 2en eine Pause ist, dann bekommt dynam layer="1" 
- - xml:id="note_94392" fehlendes @artic, ergaenzen?
- - trill_115482 double supplied	
- -  kodieren slurs bei den @stem.sameas Noten:
- 	<slur endid="#note_119970" layer="1" staff="4" startid="#note_119964" xml:id="slur_120252"/>
-								<slur endid="#note_120006" layer="2" staff="4" startid="#note_120000" xml:id="slur_120253"/>
- 
- wie kodieren zwei staccati? :
- <staff dme.parts="6,7" n="4" xml:id="staff_119946">
-    <layer n="1" xml:id="layer_119952">
-      <note doxml.id="d28e26466" dur="4" oct="4" pname="d" tstamp="1" xml:id="note_119958">
-        <supplied resp="#NMA-editors" xml:id="supplied_119958">
-          <artic artic="stacc" xml:id="artic_119958"/>
-        </supplied>
-      </note>
-      <beam xml:id="beam_127236">
-        <note accid.ges="f" doxml.id="d28e26470" dur="8" oct="4" pname="e" tstamp="1.5" xml:id="note_119964"/>
-        <note doxml.id="d28e26475" dur="8" oct="4" pname="d" tstamp="1.75" xml:id="note_119970"/>
-      </beam>
-      <note doxml.id="d28e26479" dur="4" oct="4" pname="d" tstamp="2" xml:id="note_119976">
-        <supplied resp="#NMA-editors" xml:id="supplied_119976">
-          <artic artic="stacc" xml:id="artic_119976"/>
-        </supplied>
-      </note>
-      <rest doxml.id="d28e26483" dur="4" tstamp="2.5" xml:id="rest_119982"/>
-    </layer>
-    <layer n="2" xml:id="layer_119988">
-      <note artic="stacc" doxml.id="d28e26468" dur="4" oct="3" pname="d" stem.sameas="#note_119958" tstamp="1" xml:id="note_119994"/>
-      <beam xml:id="beam_127290">
-        <note accid.ges="f" doxml.id="d28e26472" dur="8" oct="3" pname="e" stem.sameas="#note_119964" tstamp="1.5" xml:id="note_120000"/>
-        <note doxml.id="d28e26477" dur="8" oct="3" pname="d" stem.sameas="#note_119970" tstamp="1.75" xml:id="note_120006"/>
-      </beam>
-      <note artic="stacc" doxml.id="d28e26481" dur="4" oct="3" pname="d" stem.sameas="#note_119976" tstamp="2" xml:id="note_120012"/>
-      <rest doxml.id="d28e26483" sameas="#rest_119982" tstamp="2.5" xml:id="rest_120018"/>
-    </layer>
-  </staff>
- 
- Fall 1. Beide Instrumente sind unabhängig, d.h. in Intervallen >1 zueinander und mit gegenläufiger Halsung:  2 layer, Noten sind unabhängig codiert. Beide Stimmen haben aber wahrscheinlich gemeinsame Pausen; für diese gilt: Codierung in layer 1, @sameas statt @dur in layer 2
- 
- NB: Vom Herausgeber hinzugefügte Akzidentien für Nebennoten bei Verzierungen wie Doppelschlag oder Triller, stehen in der NMA in eckigen Klammern (zu codieren mit @accidupper etc. innerhalb von <trill>/<turn>). Diese können derzeit noch nicht als Zusätze, also mit <supplied> codiert werden. Sie werden aber mit <choice> kodiert.
- 
- - @layer="1 2": wird nicht bei <note>s, <chord>s etc. innerhalb des layers benötigt => hier löschen; 
- 
-   2 layer, Noten unabhängig codiert; @stem.dir ist nicht nötig, Verovio rendert automatisch gegenläufig.
-  
-
-
-
-Erstbearbeitung: 550-001
-
-Header Fragen:
-
- - <annot label="version 1" n="2"/> verschwunden bei transformation
-
-				
- 
-
-		
 
 DOXconvX  v2.2.5 (17.09.2018)
  - meiHead:
  	add values for the placeholders workID, tempoHeading, workTitleDE, workTitleEN
- 	replace tempoFirstMeasure with tempoHeading 
- 	
+ 	replace tempoFirstMeasure with tempoHeading  	
  - staffDef: add @trans.seami/@trans.diat for Corno in B hoch and Corno in G 
  
 
@@ -86,10 +23,6 @@ Ich aktualisierte MEICO-Oxygen-Verknüpfung an die letzte Version, die von Axel v
 
 
 [August 2019]
-
-ide-mei atom
-mei-tools atom
-
 
 Updates Oxygen
  - *.mei wird direkt im XMl editor geöffnet, ohne nachzufragen
@@ -206,6 +139,7 @@ Anmelden MECy
 - KVonline auf K: Einheitstitel schauen
 sueddt. bibl verbund gnd
 - gnd vom divertimento nehmen 
+
 175692 Code fuer sozialbuero
 Tel Feldbacher 01
 Leitzahl fuer die Polizei 131
@@ -342,42 +276,9 @@ sb/pb nach einem layer oder nach dem Element @n='valueOfVoice, e.g. '1' for Viol
 a 2 @sameas ? vgl Vorwort S X (543)
 
 
-[02.05.2019]
-
-- usecases:
-	- workflow: diff folder, proposals, notAuto
-	- note
-	- slur, split slur (three readings)
-	- dmeedtB1_458-001
-	- dmeedtB1_458-002
-	- dmeedtB1_458-003
-	- dmeedtB1_458-004
 
 
 
-[25.03.2019]
-
-
-
-[17.03.2018]
-- mei/@xml:id delete?
-- synchrone schematron-dme and schematron-mei
-- einheitliche Farben f RefTexts Korrekturen
-
-
-
-[11.03.2018]
-- verlorene supplied im DOX nachschauen z.B. 138-003, m74, dynam: f
-
-Anmelden MECy
-
-[04.03.2018]
-- KVonline auf K: Einheitstitel schauen
-sueddt. bibl verbund gnd
-- gnd vom divertimento nehmen 
-175692 Code fuer sozialbuero
-Tel Feldbacher 01
-Leitzahl fuer die Polizei 131
 
 
 [04.02.2018]
@@ -492,204 +393,6 @@ dox-converting accidentals
 sb/pb nach einem layer oder nach dem Element @n='valueOfVoice, e.g. '1' for Violine
 
   check DOX-converting: if tuplet/rest -> bracket visiblel
-
-
-
-
-
-
-
-
-
-
-[17.06.2018]
- - beams
- - 543-004: m128 zweiten Bogen ergänzen? Dynamik?
- - Dynamik, die sich auf zwei layer bezieht. bsp: 543-003, m61, @startid ist unlogisch, besser @tstamps
- - DIME-tools: 
- 		addBeam noch im sandbox
- 		wrapper >> convertAttr2Element_accid-artic,
- 		mergeStaves: DIME GUI
- 		
-	 
- 
-  - meiHead
-
-a 2 @sameas ? vgl Vorwort S X (543)
-
-
-[02.05.2019]
-
-- usecases:
-	- workflow: diff folder, proposals, notAuto
-	- note
-	- slur, split slur (three readings)
-	- dmeedtB1_458-001
-	- dmeedtB1_458-002
-	- dmeedtB1_458-003
-	- dmeedtB1_458-004
-
-
-
-[25.03.2019]
-
-
-
-[17.03.2018]
-- mei/@xml:id delete?
-- synchrone schematron-dme and schematron-mei
-- einheitliche Farben f RefTexts Korrekturen
-
-
-
-[11.03.2018]
-- verlorene supplied im DOX nachschauen z.B. 138-003, m74, dynam: f
-
-Anmelden MECy
-
-[04.03.2018]
-- KVonline auf K: Einheitstitel schauen
-sueddt. bibl verbund gnd
-- gnd vom divertimento nehmen 
-175692 Code fuer sozialbuero
-Tel Feldbacher 01
-Leitzahl fuer die Polizei 131
-
-
-[04.02.2018]
-Referenztext 137-001
-
-
-Besprechung 
-[28.01.2018]
-
-Besprechung 
-[21.01.2018]
-@evidence  mit @type ?
-Gerhard Widmer {Linz}
-
-
-ToDO Schematron  
-altTexts_music
-[21.01.2018]
-
-//corr[(slur| rest)]/@evidence
- - analogy
- - misprint
- - internal
-//corr[note]/@evidence
- - analogy
- - misprint
- - internal
- - harmonic_context
-//corr[dynam]/@evidence
- - analogy
- - misprint
- - internal
- - position
-//corr[accid]/@evidence
- - analogy
- - misprint
- - internal
- - harmonic_context
-//corr[rest]/@evidence
- - analogy
- - misprint
- - internal
-
-25.01.2019
-ToDo: fix conflicts with embedded schematron rules
-
-
-
-if . = "internal' then not(@source) ??
-
-[Januar 2019]
-SVN-change
-    `http://192.168.0.50/usvn/svn/LM-Violinschule/trunk` in 
-    `https://usvn.mozarteum.at/usvn/svn/LM-Violinschule/trunk`
-
-[17.01.2019]
-Implemented
-//unclear[(slur | tie)]/@reason:
- - ambiguous_start
- - ambiguous_ending
- - split
- - system_break
- - ambiguous_start ambiguous_ending
- - illegible
- 
- //unclear[note]/@reason:
- - pitch
- - duration
- - illegible
- 
- //unclear[artic]/@reason
- - ambiguous_shape
- - illegible
-
- //unclear[dynam]/@reason
- - ambiguous_position
- - illegible
-
-
-
-
-
-10 Dec 2018
-- MEC
-- diff
-- DC
-- Termin press-Konferenz
-10:30 Tanzmeistersaal,
-
-
-	
-3 Dec 2018	
-
-
-
-FK: gVIM bei mir installieren bzw. an -B1 anpassen
-
-
-
-19 Nov 2018
-use scenarios
-dmeedtA_458-001:
-wrap: reg @xml:id @resp="#DME-editors" @type="alt_representation"/dynam
-
-
-12 Nov 2018
-
-changes
-relation
-dox-converting accidentals
-
-sb/pb nach einem layer oder nach dem Element @n='valueOfVoice, e.g. '1' for Violine
-
-  check DOX-converting: if tuplet/rest -> bracket visiblel
-
-
-[19.08.2019]
-
-
-[30.08.2019]
-KV 356, 439
-
-[25.07.2019]
-- partly supplied slurs
-
-
-[22.07.2019]
-- @n Werte wie 8a schlecht, da es string ist. Probleme beim prozessieren, z. b. "4 to 18"
-
-
-
-check if notes referenced by @startid, @endid are congruent with the staff
-
-
-
-
 
 
 

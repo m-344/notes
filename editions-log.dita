@@ -3,7 +3,7 @@
 <topic id="editions-log">
 	<title>Editionslog</title>
 	<body>
-		<div id="550-001">
+		<div otherprops="workflow_1.1" id="550-001">
 			<p>
 				<b>550-01</b>
 			</p>
