@@ -215,4 +215,29 @@ var request = https.get(clarinetUrl, function(response){
 	response.pipe(clarinetFile);
 }); 
 
+require('fs'); file system module of the node
+
+npm init				[initialize npm in the working directory]
+npm install packageName  --save		
+npm install				[if you delete the folder "node modules" you can bring it back by this command]
+
+npm install gulp-cli --global		[install gulp globally]
+npm install gulp --save-dev		[install gulp locally]
+	 				  gulp-watch --save-dev	[install the package gulp-watch]
+						browser-sync --save-dev
+
+gulp watch 				[start watching tasks]
+Ctrl+C					[stop watching tasks]
+
+
+npm install postcss-simple-vars --save-dev
+						gulp-postcss
+						autoprefixer 
+						postcss-nested 
+						postcss-import 
+						postcss-mixins	
+						
+'css resets' alternative to normalize.css
+
+
 

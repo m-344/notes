@@ -9,7 +9,7 @@ commit 	-m "message in presence tense"
 	-v [opens in the editor with additional info about the commit]	
 	-a [commit all changes]
 	--amend [change the previous commit]
-push origin master	
+
 revert [ID of the commit]
 config 		[check configuration for a particular parameter]
 	-l 	[list all configuration parameters]
@@ -23,8 +23,9 @@ https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 
 
 
-cat filenName.extension [(read a file on the terminal] [GitBash] OR
-	C:\Users\sapov>type .\.gitconfig [cmd]
+cat filenName.extension [read a file from the GitBash]  OR
+type .\.gitconfig [read a file from the cmd]
+
 branch 			[check on which branch I'm working on]
 		-a			[show available branches on remote]
 		branchName	[create a new branch]
@@ -34,6 +35,7 @@ checkout
 	master -- fileName	[will overwrite with the version of the last commit]
 	-- .		[load all files from the repo, overwrites modified files]
 	-- fileName	[load particular file]
+push origin master	
 merge braunchName
 remote
 	-v show		[show remote repositorie]
@@ -97,7 +99,9 @@ ESC [switch to COMMAND mode from INSERT mode]
 add 
 	* [stage all files] 
 	. [stage the current file]
-	-A [all changes]
+	-A [all changes, adds also new files]
+
+reset	<filePath>	[unstage]
 
 TERMINAL
 

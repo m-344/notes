@@ -1,4 +1,26 @@
 [LOG]
+[Oktober 2019]
+
+schematron: 
+woodwinds, brass
+	if 2 layers and <space/>  >> ERROR
+keyboard
+	if keyboard info if @sameas >> INFO
+
+
+- add @
+DME-Besprechung 1.10.2019
+check #24602
+
+ 
+ - Fortschritt 550-001
+ - dynam/@place="above" wenn @layer="1' automatisch
+ - dir_tstamp.xsl
+ - "K:\PROJEKTE\DMEDME\workflows\entities.dita"
+ - XSL-stylesheet für einzelne Stimmen wie Klarinette I, II 
+
+
+
 [September 2019]
 
 NEW: dir_tstamp
