@@ -6,6 +6,7 @@ diff filename
 	--staged [changes made but not yet commited]
 q 	[quit git diff]
 commit 	-m "message in presence tense"
+				-am "message"	[stage and commit in one step]
 	-v [opens in the editor with additional info about the commit]	
 	-a [commit all changes]
 	--amend [change the previous commit]
@@ -28,15 +29,17 @@ type .\.gitconfig [read a file from the cmd]
 
 branch 			[check on which branch I'm working on]
 		-a			[show available branches on remote]
-		branchName	[create a new branch]
+		branchName	[create a new branch]		
 		-d brunchName 	[delete the branch]
+		
 checkout
+	-b <branchName>	[create a new branch and switch to it]
 	branchName 	[switch to another branch]
 	master -- fileName	[will overwrite with the version of the last commit]
 	-- .		[load all files from the repo, overwrites modified files]
 	-- fileName	[load particular file]
-push origin master	
-merge braunchName
+merge <braunchName>	[do it from the branch you want to merge IN]
+									 	--no-ff 	[no fast forward]
 remote
 	-v show		[show remote repositorie]
 	add origin	[set up origin for the first time]
