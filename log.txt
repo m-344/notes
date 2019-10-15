@@ -1,6 +1,17 @@
 [LOG]
 [Oktober 2019]
 
+DOXconvX: piano delete @dme.parts
+
+ - extractLayer:
+ - editorische Zusätze mitnehmen? (supplied, app, choice)
+ - Chord: gemischte Kodierung möglich? (normale Note und @sameas), Referenz auf der chord-Ebene?
+ - verschachtelte beams, möglich?
+ - "a 2" lassen?
+ - dirs: @startid durch @tstamp oder neuen @startid-Wert ersetzen?
+ 
+
+		
 schematron: 
 woodwinds, brass
 	if 2 layers and <space/>  >> ERROR
