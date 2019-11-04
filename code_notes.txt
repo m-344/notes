@@ -35,7 +35,7 @@ ___________
 
 
 
-
+XHTML DTD declaration
 <!DOCTYPE product [
   <!ELEMENT product (name, manufactuer)>
   <!ELEMENT name (#PCDATA)>
@@ -236,6 +236,8 @@ npm install postcss-simple-vars --save-dev
 						postcss-nested 
 						postcss-import 
 						postcss-mixins	
+						gulp-svg-sprite@1.3.1
+						gulp-rename
 						
 'css resets' alternative to normalize.css
 
