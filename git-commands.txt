@@ -41,7 +41,7 @@ checkout
 merge <braunchName>	[do it from the branch you want to merge IN]
 									 	--no-ff 	[no fast forward, useful for push from branch. Various commits are merged into one]
 remote
-	-v show		[show remote repositorie]
+	-v show		[show remote repositories]
 	add origin	[set up origin for the first time]
 	set-url origin https://...	[CHANGE the remote]
 
