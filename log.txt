@@ -1,5 +1,10 @@
 [LOG]
-
+[November 2019]
+ - Überwachung der Applikationsfunktionalität im Hinblick auf Funktionsoptimierung, Benutzbarkeit und
+Leistungsfähigkeit;
+ - Anpassung und Erweiterung von Applikationen
+ - Entwicklung von Schnittstellen
+ - Erstellung technischer Dokumentationen
 [Oktober 2019]
 
 DOXconvX: piano delete @dme.parts
