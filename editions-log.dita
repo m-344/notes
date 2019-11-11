@@ -10,9 +10,18 @@
 					<li>work/@n durchnumeriert oder Verweis auf Satznummer?</li>
 				</ul>
 			</p>
+			<p>550-001: Warum hier app? im KB für dies S. 129, m54 steht nichts.<pre>&lt;app xml:id="app_27642">
+												&lt;lem source="#source_2 #source_3" xml:id="lem_27642">
+													&lt;supplied resp="#NMA-editors" xml:id="supplied_27642">
+												&lt;artic artic="stacc" xml:id="artic_27642"/>
+											&lt;/supplied>
+												&lt;/lem>
+											&lt;rdg source="#source_1" xml:id="rdg_27642"/>
+											&lt;/app></pre></p>
 			<p>Kodierungsanmerkungen:<pre>	&lt;dir doxml.id="d28e10234" layer="1 2" place="above" staff="4" tstamp="1" xml:id="dir_52050">
 									&lt;rend fontstyle="normal" halign="center" xml:id="rend_52050">Soli&lt;/rend>
-								&lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">
+								&lt;/dir>
+	&lt;dir doxml.id="d28e15259" layer="1" place="above" staff="10" tstamp="2" xml:id="dir_70410">&lt;rend fontstyle="normal" xml:id="rend_70410">Violoncelli&lt;/rend>&lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">
 					&lt;ref target="dme.mozarteum.at/movi/file/550/1" targettype="file_location">dmeref_550-001_6310.xml&lt;/ref>
 				&lt;/title></pre><pre>		&lt;perfResList authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf"></pre><pre>&lt;work n="1"/> &lt;work n="2"/> ...</pre><pre>			&lt;change isodate="2019-10-24" n="3" resp="#OS">
 				&lt;changeDesc>
@@ -20,7 +29,14 @@
 				&lt;/changeDesc>
 			&lt;/change>
 </pre><pre>	&lt;scoreDef  optimize="false" ></pre><pre>	&lt;rest doxml.id="d28e7173" dur="4" oloc="3" ploc="b" tstamp="1.5" xml:id="rest_38436"/>
-										&lt;rest doxml.id="d28e7178" dur="4" oloc="3" ploc="b" tstamp="2" xml:id="rest_38442"/></pre></p>
+										&lt;rest doxml.id="d28e7178" dur="4" oloc="3" ploc="b" tstamp="2" xml:id="rest_38442"/></pre><pre>		&lt;choice xml:id="choice_94392">
+												&lt;corr label="misprint" resp="#DME-editors" xml:id="corr_94392">
+													&lt;artic artic="spicc" xml:id="artic_94392"/>
+												&lt;/corr>
+												&lt;sic xml:id="sic_94392"/>
+											&lt;/choice></pre><pre>		&lt;label xml:id="label_P3">Clarinetti&lt;lb xml:id="lb_P3"/> in Si♭/B&lt;/label></pre><pre>		&lt;dir doxml.id="d28e23027" layer="1" place="above" staff="4" tstamp="1" xml:id="dir_106284">
+										&lt;rend fontstyle="normal" halign="center" xml:id="rend_106284">Solo&lt;/rend>
+									&lt;/dir></pre></p>
 
 
 
@@ -39,6 +55,10 @@
 						</row>
 					</thead>
 					<tbody>
+						<row>
+							<entry/>
+							<entry>545-001 (7.November 2019,music only)</entry>
+						</row>
 						<row>
 							<entry/>
 							<entry>550-003 (Oktober 2019)</entry>
