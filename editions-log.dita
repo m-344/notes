@@ -6,19 +6,10 @@
 		<div id="550-001" otherprops="workflow_1.1">
 			<p>
 				<b>550-03</b>
-				<ul id="ul_bpd_kwz_fjb">
-					<li>work/@n durchnumeriert oder Verweis auf Satznummer?</li>
-				</ul>
 			</p>
-			<p>550-001: Warum hier app? im KB für dies S. 129, m54 steht nichts.<pre>&lt;app xml:id="app_27642">
-												&lt;lem source="#source_2 #source_3" xml:id="lem_27642">
-													&lt;supplied resp="#NMA-editors" xml:id="supplied_27642">
-												&lt;artic artic="stacc" xml:id="artic_27642"/>
-											&lt;/supplied>
-												&lt;/lem>
-											&lt;rdg source="#source_1" xml:id="rdg_27642"/>
-											&lt;/app></pre></p>
-			<p>Kodierungsanmerkungen:<pre>	&lt;dir doxml.id="d28e10234" layer="1 2" place="above" staff="4" tstamp="1" xml:id="dir_52050">
+			<p>Kodierungsanmerkungen:<ul id="ul_fnf_clg_sjb">
+					<li>work/@n durchnumeriert </li>
+				</ul><pre>	&lt;dir doxml.id="d28e10234" layer="1 2" place="above" staff="4" tstamp="1" xml:id="dir_52050">
 									&lt;rend fontstyle="normal" halign="center" xml:id="rend_52050">Soli&lt;/rend>
 								&lt;/dir>
 	&lt;dir doxml.id="d28e15259" layer="1" place="above" staff="10" tstamp="2" xml:id="dir_70410">&lt;rend fontstyle="normal" xml:id="rend_70410">Violoncelli&lt;/rend>&lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">

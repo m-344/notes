@@ -1,5 +1,88 @@
 [LOG]
+[Dezember 2019]
+
+<app  xml:id="app_${xpath_eval(
+	(parse-xml('${selection}')//*[@xml:id])[1]/@xml:id/substring-after(., '_')
+	)}">
+	<rdg source="#source_2 #source_4" corresp="#ISMIDW6309" label="version-2_6309" n="2" xml:id="rdg2_${xpath_eval(
+		(parse-xml('${selection}')//*[@xml:id])[1]/@xml:id/substring-after(., '_')
+		)}">			
+		${selection}
+	</rdg>
+	<rdg source="#source_1 #source_3" corresp="#ISMIDW6318" label="version-1_6318" n="1" xml:id="rdg1_${xpath_eval(
+		(parse-xml('${selection}')//*[@xml:id]/@xml:id)[1]/substring-after(., '_')
+		)}">
+		${caret}
+	</rdg>
+</app>
+
+KV 290
+
+
 [November 2019]
+- schematron
+	allow supplied/@resp="#DME-editors" for reference texts
+	exclude @clef[@sameas] from the rule
+
+- code templates
+		app, choice
+
+
+ - schematron:
+	 make @tstamp required for chord
+	 allow values #digital_image[\d]? for facsimile/@decls
+ update documentation links
+ 
+ - selectVoice, v1.0.1:
+  	new: 
+  		- reads <app> with two versions (K 550)
+  		- shows the fermatas properly
+  		- deletes @ploc, @oloc (for extracted <layer>s only
+  		
+  	
+
+
+ - Karayan music tech: 3.04.2019
+ - KV550.xsl
+ 
+ 
+ 
+ 
+1. Einfügen von dem <facsimile> aus der v1.
+		update @data (Beispiel: data="#measure1" => data="#m0_k550_003_a")
+Für beide <facsimile>: ändern @xml:id mit einer neuen Endung: jeweils 'a' (v1), 'b' (v2)
+	update @decls
+
+2. Einfügen von einer Verknüpfung ins measure/@facs (Beispiel: facs="#zoneOf_measure1a" => facs="#zoneOf_measure1a #zoneOf_measure1b").
+
+3. Einfügen von einem <pb> aus v1 und wrap es in ein <app>. 
+Beispiel:
+<app xml:id="app_20256">
+							<rdg corresp="#ISMIDW6309" label="version 2" n="2" xml:id="rdg2_20256">
+									<pb facs="#surface_164" n="164" xml:id="pb_20256"/>
+							</rdg>
+							<rdg corresp="#ISMIDW6318" label="version 1" n="1" xml:id="rdg1_20256">
+									<pb facs="#surface_102" n="102" xml:id="pb_20256a"/>
+							</rdg>
+</app>
+
+4. Wrap von jedem Klarinettensystem in ein <app>. 
+Beispiel:
+<app xml:id="app_4656">
+									<rdg corresp="#ISMIDW6309" label="version 2" n="2" xml:id="rdg2_4656">
+										<staff dme.parts="4,5" n="3" xml:id="staff_4656">
+											<layer n="1" xml:id="layer_4662">
+												<rest doxml.id="d28e179" dur="4" tstamp="1" xml:id="rest_4668"/>
+											</layer>
+											<layer n="2" sameas="#layer_4662" xml:id="layer_4662b"/>
+										</staff>
+									</rdg>
+									<rdg corresp="#ISMIDW6318" label="version 1" n="1" xml:id="rdg1_4656"/>
+								</app>
+								
+Ausnahme: im 3. Satz/Trio gibt es kein Unterschied zwischen den Fassungen >> Option eines Ausschlusskriteriums nach mdiv/@xml:id
+
+
  - Überwachung der Applikationsfunktionalität im Hinblick auf Funktionsoptimierung, Benutzbarkeit und
 Leistungsfähigkeit;
  - Anpassung und Erweiterung von Applikationen

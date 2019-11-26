@@ -1,3 +1,20 @@
+	<xd:doc>
+		<xd:desc>slur, tie, etc. with no supplied, app etc.</xd:desc>
+	</xd:doc>
+	<xsl:template match="measure//*[not(ancestor::node()[ancestor::measure])]">
+		
+	</xsl:template>
+	
+	<xd:doc>
+		<xd:desc>supplied, app, etc. which do have slur etc.</xd:desc>
+	</xd:doc>
+	<xsl:template match="measure/*[descendant::node()[@staff]]">
+		
+	</xsl:template>
+
+
+
+
 correct tstamp2:
 4/4		2/2
 ___________
@@ -224,21 +241,14 @@ npm install				[if you delete the folder "node modules" you can bring it back by
 npm install gulp-cli --global		[install gulp globally]
 npm install gulp --save-dev		[install gulp locally]
 	 				  gulp-watch --save-dev	[install the package gulp-watch]
-						browser-sync --save-dev
-						webpack -g 	[install webpack globally]
+						
+						webpack -g 	[install globally]
 
 gulp watch 				[start watching tasks]
 Ctrl+C					[stop watching tasks]
 
+webpack		[run webpack]
 
-npm install postcss-simple-vars --save-dev
-						gulp-postcss
-						autoprefixer 
-						postcss-nested 
-						postcss-import 
-						postcss-mixins	
-						gulp-svg-sprite@1.3.1
-						gulp-rename
 						
 'css resets' alternative to normalize.css
 
