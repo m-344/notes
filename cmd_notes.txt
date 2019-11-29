@@ -1,0 +1,54 @@
+help
+help del
+"command" /?
+
+NAVIGATION https://www.digitalcitizen.life/command-prompt-how-use-basic-commands
+cd\
+cd ..
+cd windows\system32
+l:
+cd /d L:\Programmieren
+dir [see the subdirectories]	 LINUX: ll
+pwd [full path of the current folder]
+
+
+mkdir
+mkdir test1\test2
+ren test TEST
+copy L:\Programmieren\cmd\NOTES.txt L:\Programmieren\test1\notes.txt
+xcopy /s /i L:\Programmieren\test1 C:\Users\sapov\files_C\Backup
+del test1
+Here is a list of useful DEL combinations that are worth mentioning:
+
+    DEL *.DOCX - delete all files with the DOC extension (you can use any file extension necessary, DOCX is just an example);
+    DEL Test*.* - delete all files beginning with Test;
+    DEL *.* - delete ALL files from the current folder.
+
+
+
+ping
+chkdsk
+cls
+
+
+| clip 
+nslookup
+
+
+    F1 lets you paste in your last command, character by character.
+    F2 pastes the last command only to a specified character.
+    F3 pastes it entirely.
+    F4 deletes a command up to a specified character.
+    F5 pastes the last used command without cycling.
+    F6 Pastes “^Z”.
+    F7 gives you a list of previously used commands.
+    F8 pastes cyclable used commands.
+    F9 lets you paste a command from the list of recently used ones.
+
+
+step 1: run on the command line from the current directory "python -m SimpleHTTPServer 8080"	
+step 2: typ in the browser localhost:8080
+
+
+Ctrl+C 	stop simpleHTTPServer
+
