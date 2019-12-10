@@ -31,6 +31,7 @@ branch 			[check on which branch I'm working on]
 		-a			[show available branches on remote]
 		branchName	[create a new branch]		
 		-d brunchName 	[delete the branch]
+		-m newName			[rename, if you are on the branch you want to rename]
 		
 checkout
 	-b <branchName>	[create a new branch and switch to it]
@@ -45,7 +46,7 @@ remote
 	add origin	[set up origin for the first time]
 	set-url origin https://...	[CHANGE the remote]
 
-reset --soft HEAD~{number of commits}	[squashes the commits ~ merges them int ome]
+reset --soft HEAD~{number of commits}	[squashes the commits ~ merges them into ome]
 
 
 

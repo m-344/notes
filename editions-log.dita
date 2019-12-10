@@ -5,16 +5,22 @@
 	<body>
 		<div id="550-001" otherprops="workflow_1.1">
 			<p>
-				<b>550-03</b>
+				<b>550-03 (proofreading 2)</b>
 			</p>
+			<p>MoVI: <ul id="ul_iyl_j2v_xjb">
+					<li>select Staves: werden übrige staves angezeigt</li>
+				</ul></p>
 			<p>Kodierungsanmerkungen:<ul id="ul_fnf_clg_sjb">
-					<li>work/@n durchnumeriert </li>
+					<li/>
 				</ul><pre>	&lt;dir doxml.id="d28e10234" layer="1 2" place="above" staff="4" tstamp="1" xml:id="dir_52050">
-									&lt;rend fontstyle="normal" halign="center" xml:id="rend_52050">Soli&lt;/rend>
-								&lt;/dir>
-	&lt;dir doxml.id="d28e15259" layer="1" place="above" staff="10" tstamp="2" xml:id="dir_70410">&lt;rend fontstyle="normal" xml:id="rend_70410">Violoncelli&lt;/rend>&lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">
-					&lt;ref target="dme.mozarteum.at/movi/file/550/1" targettype="file_location">dmeref_550-001_6310.xml&lt;/ref>
-				&lt;/title></pre><pre>		&lt;perfResList authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf"></pre><pre>&lt;work n="1"/> &lt;work n="2"/> ...</pre><pre>			&lt;change isodate="2019-10-24" n="3" resp="#OS">
+			&lt;rend fontstyle="normal" halign="center" xml:id="rend_52050">Soli&lt;/rend>
+&lt;/dir>
+	
+&lt;dir doxml.id="d28e15259" layer="1" place="above" staff="10" tstamp="2" xml:id="dir_70410">
+&lt;rend fontstyle="normal" xml:id="rend_70410">Violoncelli&lt;/rend>
+&lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">
+	&lt;ref target="dme.mozarteum.at/movi/file/550/1" targettype="file_location">dmeref_550-001_6310.xml&lt;/ref>
+&lt;/title></pre><pre>&lt;perfResList authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf"></pre><pre>&lt;work n="1"/> &lt;work n="2"/> ...</pre><pre>			&lt;change isodate="2019-10-24" n="3" resp="#OS">
 				&lt;changeDesc>
 					&lt;p>revised and updated according to workflow_1.1&lt;/p>
 				&lt;/changeDesc>
@@ -48,414 +54,22 @@
 					<tbody>
 						<row>
 							<entry/>
-							<entry>545-001 (7.November 2019,music only)</entry>
+							<entry>581-004 (proofreading 2)</entry>
 						</row>
 						<row>
 							<entry/>
-							<entry>550-003 (Oktober 2019)</entry>
+							<entry>550-003 (2. Dezember, v2)</entry>
 						</row>
 						<row>
-							<entry>550-001 (September 2019)</entry>
 							<entry/>
+							<entry>545-001 (7.November 2019, music only)</entry>
 						</row>
 						<row>
 							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
+							<entry>550-003 (Oktober 2019, v1)</entry>
 						</row>
 						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
-							<entry/>
-						</row>
-						<row>
-							<entry/>
+							<entry>550-001 (September 2019) (1. und 2. Versionen)</entry>
 							<entry/>
 						</row>
 					</tbody>
