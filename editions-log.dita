@@ -5,10 +5,15 @@
 	<body>
 		<div id="550-001" otherprops="workflow_1.1">
 			<p>
-				<b>550-03 (proofreading 2)</b>
-			</p>
-			<p>MoVI: <ul id="ul_iyl_j2v_xjb">
-					<li>select Staves: werden übrige staves angezeigt</li>
+				<b>290 (proofreading )</b>
+				<ul id="ul_yrc_ppb_ckb">
+					<li>im DC wird <pre> &lt;dc:title>March in D for two horns, violin, viola and bass, K. 290&lt;/dc:title>
+  &lt;dc:relation>March in D for two horns, violin, viola and bass, K. 290&lt;/dc:relation></pre> weil von hier ausgelesen: <pre>&lt;title type="main" xml:lang="EN">
+						&lt;title>March in D for two horns, violin, viola and bass&lt;/title>
+						&lt;identifier analog="#KVonline" label="KV">K. 290&lt;/identifier>
+					&lt;/title></pre></li>
+					<li>m55</li>
+					<li>annot und choice werden in MoVI webdev nicht angezeigt</li>
 				</ul></p>
 			<p>Kodierungsanmerkungen:<ul id="ul_fnf_clg_sjb">
 					<li/>
@@ -19,14 +24,13 @@
 &lt;dir doxml.id="d28e15259" layer="1" place="above" staff="10" tstamp="2" xml:id="dir_70410">
 &lt;rend fontstyle="normal" xml:id="rend_70410">Violoncelli&lt;/rend>
 &lt;/dir></pre><pre>&lt;title type="file" xml:id="fd_tit_3">
-	&lt;ref target="dme.mozarteum.at/movi/file/550/1" targettype="file_location">dmeref_550-001_6310.xml&lt;/ref>
+	&lt;ref target="dme.mozarteum.at/movi/file/$kvNumber/1" targettype="file_location">dmeref_550-001_6310.xml&lt;/ref>
 &lt;/title></pre><pre>&lt;perfResList authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf"></pre><pre>&lt;work n="1"/> &lt;work n="2"/> ...</pre><pre>			&lt;change isodate="2019-10-24" n="3" resp="#OS">
 				&lt;changeDesc>
 					&lt;p>revised and updated according to workflow_1.1&lt;/p>
 				&lt;/changeDesc>
 			&lt;/change>
-</pre><pre>	&lt;scoreDef  optimize="false" ></pre><pre>	&lt;rest doxml.id="d28e7173" dur="4" oloc="3" ploc="b" tstamp="1.5" xml:id="rest_38436"/>
-										&lt;rest doxml.id="d28e7178" dur="4" oloc="3" ploc="b" tstamp="2" xml:id="rest_38442"/></pre><pre>		&lt;choice xml:id="choice_94392">
+</pre><pre>	&lt;scoreDef  optimize="false" ></pre><pre>		&lt;choice xml:id="choice_94392">
 												&lt;corr label="misprint" resp="#DME-editors" xml:id="corr_94392">
 													&lt;artic artic="spicc" xml:id="artic_94392"/>
 												&lt;/corr>
@@ -52,6 +56,21 @@
 						</row>
 					</thead>
 					<tbody>
+						<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+						<row>
+							<entry nameend="c2" namest="c1">1. Quartal 2020</entry>
+						</row><?oxy_custom_end?>
+						<row>
+							<entry/>
+							<entry/>
+						</row>
+						<row>
+							<entry nameend="c2" namest="c1"><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>4. Quartal 2019<?oxy_custom_end?></entry>
+						</row>
+						<row>
+							<entry/>
+							<entry>290 (proofreading)</entry>
+						</row>
 						<row>
 							<entry/>
 							<entry>581-004 (proofreading 2)</entry>
@@ -69,7 +88,11 @@
 							<entry>550-003 (Oktober 2019, v1)</entry>
 						</row>
 						<row>
-							<entry>550-001 (September 2019) (1. und 2. Versionen)</entry>
+							<entry>550-001 (Version 1)</entry>
+							<entry/>
+						</row>
+						<row>
+							<entry>550-001 (September 2019) (Version 2)</entry>
 							<entry/>
 						</row>
 					</tbody>

@@ -32,6 +32,7 @@ branch 			[check on which branch I'm working on]
 		branchName	[create a new branch]		
 		-d brunchName 	[delete the branch]
 		-m newName			[rename, if you are on the branch you want to rename]
+push remoteName --delete branchName	[delete a remote branch]		
 		
 checkout
 	-b <branchName>	[create a new branch and switch to it]
@@ -95,7 +96,12 @@ help help commandName
 
 
 ARCHIVE
-
+_______
+cd /d D:\projects\git-tutorial-brad
+cd /d D:\projects\MCC
+git config --local user.name "m-344"
+git config --local user.email "le.chat454@gmail.com"
+_______
 
 VIM INSERT MODE
 ESC [switch to COMMAND mode from INSERT mode]
@@ -114,8 +120,6 @@ NOTES:
 attlssian bitbucket remote rpository services
 
 
-_______
-git config --local user.name "m-344"
-git config --local user.email "le.chat454@gmail.com"
+
 
 

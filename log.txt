@@ -1,22 +1,6 @@
 [LOG]
 [Dezember 2019]
 
-<app  xml:id="app_${xpath_eval(
-	(parse-xml('${selection}')//*[@xml:id])[1]/@xml:id/substring-after(., '_')
-	)}">
-	<rdg source="#source_2 #source_4" corresp="#ISMIDW6309" label="version-2_6309" n="2" xml:id="rdg2_${xpath_eval(
-		(parse-xml('${selection}')//*[@xml:id])[1]/@xml:id/substring-after(., '_')
-		)}">			
-		${selection}
-	</rdg>
-	<rdg source="#source_1 #source_3" corresp="#ISMIDW6318" label="version-1_6318" n="1" xml:id="rdg1_${xpath_eval(
-		(parse-xml('${selection}')//*[@xml:id]/@xml:id)[1]/substring-after(., '_')
-		)}">
-		${caret}
-	</rdg>
-</app>
-
-KV 290
 
 
 [November 2019]
