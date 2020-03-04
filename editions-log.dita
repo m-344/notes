@@ -3,6 +3,12 @@
 <topic id="editions-log">
 	<title>Editionslog</title>
 	<body>
+		<div>
+			<data>
+				<title/>
+				<title conref="#editions-log/overview"/>
+			</data>
+		</div>
 		<div id="550-001" otherprops="workflow_1.1">
 			<p>
 				<b>290 (proofreading )</b>
@@ -14,9 +20,17 @@
 					&lt;/title></pre></li>
 					<li>m55</li>
 					<li>annot und choice werden in MoVI webdev nicht angezeigt</li>
-				</ul></p>
+				</ul>
+			</p>
+
+
+
+
+
+		</div>
+		<div id="kodierungsanmerkungen">
 			<p>Kodierungsanmerkungen:<ul id="ul_fnf_clg_sjb">
-					<li/>
+					<li>Instrumentenabkuerzungen: in einem Word-Dokument zusammengefasst unter Projekte => DMEDME => Editionsrichtlinien => Instrumentenabkürzungen</li>
 				</ul><pre>	&lt;dir doxml.id="d28e10234" layer="1 2" place="above" staff="4" tstamp="1" xml:id="dir_52050">
 			&lt;rend fontstyle="normal" halign="center" xml:id="rend_52050">Soli&lt;/rend>
 &lt;/dir>
@@ -38,14 +52,10 @@
 											&lt;/choice></pre><pre>		&lt;label xml:id="label_P3">Clarinetti&lt;lb xml:id="lb_P3"/> in Si♭/B&lt;/label></pre><pre>		&lt;dir doxml.id="d28e23027" layer="1" place="above" staff="4" tstamp="1" xml:id="dir_106284">
 										&lt;rend fontstyle="normal" halign="center" xml:id="rend_106284">Solo&lt;/rend>
 									&lt;/dir></pre></p>
-
-
-
-
 		</div>
 		<div>
 			<table colsep="1" frame="all" id="table_yv1_mqx_fjb" rowsep="1">
-				<title>Reference texts</title>
+				<title id="overview">overview</title>
 				<tgroup align="left" cols="2">
 					<colspec colname="c1" colnum="1" colwidth="1*"/>
 					<colspec colname="c2" colnum="2" colwidth="1*"/>
@@ -61,7 +71,7 @@
 							<entry nameend="c2" namest="c1">1. Quartal 2020</entry>
 						</row><?oxy_custom_end?>
 						<row>
-							<entry/>
+							<entry>551-004</entry>
 							<entry/>
 						</row>
 						<row>
