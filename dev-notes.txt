@@ -7,6 +7,14 @@ DOXconvX
  changes for testing purposes
   - comment out the variables in DOXconvX
   - changed the file name Werk-header_550_TEST.xml in dme:inputHead
+
+
+
+
+responsive images
+document.querySelector('html').clientWidth [browser console]
+pocophone f1 6.18 inch, about 393x817 px
+
   
   
 
