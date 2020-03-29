@@ -1,1 +1,8 @@
-Windows Key+R and type services.msc 
+
+stop HP Touchpoint analytics
+	Windows Key+R and type services.msc 
+
+disable 
+Windows Key+R and type taskschd.msc
+https://geeksadvice.com/fix-microsoft-compatibility-telemetry-high-cpu-usage/
+CompatTelRunner.exe
