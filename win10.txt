@@ -1,0 +1,1 @@
+Windows Key+R and type services.msc 
