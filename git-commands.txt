@@ -2,6 +2,11 @@
 init --bare	[intialize a bare repo, used as remote]
 --version
 staus -s	[-s stand for short]
+
+clone https://GitHubUsername:GithubPassword@github.com/o-sapov/data_science_course-mlgraz.git [clone a remote private repo]
+
+
+
 diff filename
 	--staged [changes made but not yet commited]
 q 	[quit git diff]
