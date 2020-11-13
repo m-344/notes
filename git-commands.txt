@@ -89,7 +89,7 @@ dd 	[del line]
 :q quite VI
 :wq write file and quite
 
-
+pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME 	[merge a forked upstream]
 
 
 
