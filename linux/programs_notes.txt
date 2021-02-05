@@ -1,0 +1,64 @@
+MANAGE
+https://techwiser.com/uninstall-applications-ubuntu/
+sudo apt purge --auto-remove redshift redshift-gtk
+
+PPA
+sudo ls /etc/apt/sources.list.d
+
+
+7z	e test.7z
+	a test.csv -p
+	
+	
+
+PYCHARM
+Ctrl+Alt+L	REFORMAT		
+Ctrl+Alt+S	SETTINGS
+
+PYTHON
+chmod +x <fileName>	[make file executable, add <exPath> to the beginning og the file: "#!/usr/bin/env python3", execute with ./<fileName>
+
+ANACONDA
+https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/
+
+conda 
+	config --set auto_activate_base false
+	install <packageName(s)>
+	install -c conda-forge <packageName>	[if using normal installation conda didn't find the package you may try this]
+{environments}
+	info --envs
+	env list
+	activate py2
+	deactivate	
+	create --name <packageName(s)> <python=3.7> 
+	[creates new environment and installs package(s)]
+	list	[all installed packages in current env]
+	du -hs <path2env>	[how much space takes the environment, use env list to get /home/os7/anaconda3/envs/py3_7]
+	env remove --name	<envName>
+	TODO: check "using pip in environment"
+
+CHROMIUM	
+Shift+Esc	open task manager
+
+PDF CHAIN
+
+TERMINAL
+
+timedatectl
+gnome-tweaksgnome-tweaksgn
+gnome-tweaks
+
+GIT
+git mv old_filename new_filename	[rename file]
+
+
+DISPLAY
+brightness-controller	[https://askubuntu.com/questions/218953/can-i-control-brightness-on-second-monitor/457281#457281]
+xrandr --listactivemonitors
+brightness:	lxqt-config 
+xrandr | grep " connected" | cut -f1 -d " "	[GET MONITOR NAMES]
+REDSHIFT
+https://linoxide.com/tools/install-use-redshift-ubuntu-16-04/
+
+FTP XIAOMI: ftp://192.168.178.23:48031
+

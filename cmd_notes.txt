@@ -9,7 +9,7 @@ cd ..
 cd windows\system32
 l:
 cd /d L:\Programmieren
-dir [see the subdirectories]	 LINUX: ll
+dir [see the subdirectories]	
 pwd [full path of the current folder]
 
 

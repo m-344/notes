@@ -1,0 +1,52 @@
+ls
+	-a	[hidden files]
+	-l	[longer format]
+ll	[subdirectories]
+mv	[move or rename files]
+touch text.txt 	[also updates the creation date]
+echo 'D43F2404CA13E22594E5C8B04D3BBB81  filetohashA.txt' | md5sum -c
+filetohashA.txt: OK
+	
+create links	 
+ln -s /mnt/wwn-0x50014ee2bd543967-part2/Musik  ~/Desktop/music
+
+
+apt-get upgrade
+
+cd -
+pwd
+mv
+rm	
+	-r 	[recursive, remove directories]
+	-f 	[force, also -rf]
+history
+top
+man intro
+-h
+--help
+-help
+info
+grep
+chown  chmode
+nano -w <fileName>	[create file]
+
+whatis grep
+
+
+
+Ctrl + E			Move cursor to end of line
+Ctrl + U			Clears the entire current line
+Ctrl + K			Clears the command from the cursor right
+Ctrl + W			Delete the word before the cursor
+Ctrl + R			Allows you to search your history for commands matching what you have typed
+Ctrl + Z			Suspend the current process by sending the signal SIGSTOP
+Ctrl + L			Clears the terminal output
+Ctrl + Shift + T	Open new tab on current terminal
+Ctrl + Shift + W	Close the current tab
+Ctrl + A	Move cursor to beginning of line
+
+lscpu	[cpu info]
+
+xdg-open {file | URL}
+
+find / -name <folderName> -type d
