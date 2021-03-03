@@ -1,3 +1,8 @@
+img2pdf
+img2pdf mrt.png -o mrt.pdf
+
+
+
 MANAGE
 https://techwiser.com/uninstall-applications-ubuntu/
 sudo apt purge --auto-remove redshift redshift-gtk
@@ -10,8 +15,9 @@ sudo ls /etc/apt/sources.list.d
 	a test.csv -p
 	
 	
-
++
 PYCHARM
+F9 [proceed to next breakpoint]
 Ctrl+Alt+L	REFORMAT		
 Ctrl+Alt+S	SETTINGS
 
@@ -30,12 +36,25 @@ conda
 	env list
 	activate py2
 	deactivate	
-	create --name <packageName(s)> <python=3.7> 
-	[creates new environment and installs package(s)]
+	create --name <packageName(s)> <python=3.7> 	[creates new environment and installs package(s)]
+	env remove --name	<envName>
 	list	[all installed packages in current env]
 	du -hs <path2env>	[how much space takes the environment, use env list to get /home/os7/anaconda3/envs/py3_7]
-	env remove --name	<envName>
+	
 	TODO: check "using pip in environment"
+anaconda-navigator	[activate and run from base]
+conda	update --all
+
+
+
+JUPYTER
+jupyter-lab	start
+jupyter notebook	[start NB:navigate to the directory you wish to work]
+Shift+Tab	[show docstrings, focus after the object]
+Tab	[autocompletion]
+
+%load_ext nb_black	format jupyter	[add in the first line]
+%load_ext lab_black	format jupyter-lab	[add in the first line]
 
 CHROMIUM	
 Shift+Esc	open task manager
@@ -61,4 +80,7 @@ REDSHIFT
 https://linoxide.com/tools/install-use-redshift-ubuntu-16-04/
 
 FTP XIAOMI: ftp://192.168.178.23:48031
+
+TRANSLATE
+translate-cli --help
 
