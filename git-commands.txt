@@ -38,7 +38,10 @@ branch 			[check on which branch I'm working on]
 		-d brunchName 	[delete the branch]
 		-m newName			[rename, if you are on the branch you want to rename]
 push remoteName --delete branchName	[delete a remote branch]		
-		
+
+clone	https://o-sapov:le.Chat511@github.com/o-sapov/data_science_course-mlgraz.git			[clone private repo]
+	https://o-sapov:le.Chat511@github.com/ism-dme/DIME-tools.git
+ 
 checkout
 	-b <branchName>	[create a new branch and switch to it]
 	branchName 	[switch to another branch]
